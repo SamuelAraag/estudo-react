@@ -1,15 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { Cabecalho } from './pagina-principal/cabecalho';
+import { PaginaHome } from './pagina-principal/paginaHome';
 
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <Cabecalho/>,
-  document.getElementById("root")
+ReactDOM.render(
+  <>
+    <Cabecalho/>
+    <PaginaHome/>
+  </>,
+  document.getElementById('root')
 );
 
 reportWebVitals();
