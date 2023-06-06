@@ -2,22 +2,22 @@ import React from "react"
 
 export class Cabecalho extends React.Component{
     render(){
-    return <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">React</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    return <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+            <a className="navbar-brand" href="#">React</a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+                <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Primeiros Passos</a>
+                <li className="nav-item">
+                <a className="nav-link" to="/sobre/">Sobre</a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Meus contatos</a>
+                <li className="nav-item">
+                <a className="nav-link" href="#">Meus contatos</a>
                 </li>
             </ul>
             </div>
