@@ -14,7 +14,7 @@ export class Cabecalho extends React.Component{
                 <a className="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" to="/sobre/">Sobre</a>
+                <a className="nav-link" Link to="/sobre/">Sobre</a>
                 </li>
                 <li className="nav-item">
                 <a className="nav-link" href="#">Meus contatos</a>

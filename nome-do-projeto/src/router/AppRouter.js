@@ -9,8 +9,8 @@ const PaginaSobre = () => <Sobre />;
 const AppRouter = () => (
   <Router>
     <div>
-        <Route exact path="/" component={Principal} />
-        <Route path="/sobre" component={PaginaSobre} />
+        <Route exact path="/" component={ Principal } />
+        <Route path="/sobre" component={ PaginaSobre } />
     </div>
   </Router>
 );
