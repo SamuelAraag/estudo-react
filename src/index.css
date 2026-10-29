@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin-left: auto;
+}
+
+footer {
+    margin-top: 32px;
+    color: #6b6375;
+}
