@@ -4,23 +4,84 @@
 
 body {
     margin: 0;
-    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+    background-color: #282d35;
+    color: #fff;
 }
 
-header {
+#root {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
     display: flex;
     align-items: center;
+    gap: 10px;
+    padding: 20px 30px;
+    background-color: #21222a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-.nav-list {
-    display: flex;
-    list-style: none;
-    gap: 16px;
-    margin-left: auto;
+.header-logo {
+    width: 40px;
 }
 
-footer {
-    margin-top: 32px;
-    color: #6b6375;
+.header-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #61dafb;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+.main-title {
+    font-size: 2.4rem;
+    margin: 0 0 30px;
+}
+
+.list-items {
+    margin: 0;
+    padding-left: 24px;
+    line-height: 1.8;
+}
+
+.list-items li::marker {
+    color: #61dafb;
+    font-size: 1.2em;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    color: #8a8f98;
+    border-top: 1px solid #3a3f4b;
+}
+
+/* Telas pequenas */
+@media (max-width: 600px) {
+    .header {
+        padding: 16px;
+    }
+
+    .main {
+        padding: 30px 16px;
+    }
+
+    .main-title {
+        font-size: 1.8rem;
+    }
 }
